@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Entry Form</title>
+    <style>
+.pimp-button{
+    border: solid 2px black;
+    background-color: antiquewhite;
+    height: 20px;
+    width: auto;
+    border-radius: 10px;
+}
+.Reset-button{
+    border: solid 2px black;
+    background-color: antiquewhite;
+    height: 20px;
+    width: 50px;
+    border-radius: 10px;
+}
+.f1{
+    padding-left: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>"Pimp My Shoes" Contest Entry Form</h1>
+    <p>Want to trade in your old sneakers for a custom pair of Forcefields?Make a case for why your shoes have got to go and you may be one<br/>of ten lucky winners</p>
+    <br/>
+    <p>Contest Entry Information</p>
+    <form class="f1">
+        <label for="name">Name:</label>
+        <input type="name" name="name" id="name"/>
+        <br/>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email"/>
+            <br/>
+                <label for="number">Telephone number:</label>
+                <input type="number" name="number" id="number"/>
+                <br/>
+                <label for="old shoes">My shoes are SO old...</label><br>
+
+                <textarea id="old shoes" name="old shoes" rows="4" cols="50" placeholder="No more than 300 characters long"></textarea><br><br>
+                
+    </form>
+    <h2>Design your custom Forcefields:</h2>
+    <fieldset>
+       
+        <legend>Custom Shoe Design</legend>
+        <fieldset>
+            <legend>Color <i>(choose color)</i></legend><br>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">Red</label><br>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="red">Blue</label><br>
+            <input type="radio" id="black" name="color" value="black">
+            <label for="red">Black</label><br>
+            <input type="radio" id="silver" name="color" value="silver">
+            <label for="red">Silver</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Features<i>(Choose as many as you want)</i></legend>
+            <input type="checkbox" id="text" name="text" value="text">
+            <label for="text">Spark ley laces</label><br>
+            <input type="checkbox" id="text" name="text" value="text">
+            <label for="text">Metallic logo</label><br>
+            <input type="checkbox" id="text" name="text" value="text" checked="checked">
+            <label for="text">Light-up heels</label><br>
+            <input type="checkbox" id="text" name="text" value="text">
+            <label for="text">MP3-enabled</label><br>
+        
+        </fieldset>
+
+        <Fieldset>
+            <legend>Size</legend>
+            <label for="text">Sizes reflect standard men's sizes:</label>
+           <input type="number" id="size" name="size" placeholder="5" max="15" min="1">
+            
+        </Fieldset>
+
+    </fieldset>
+    <br>
+    <div class="buttons">
+    <button class="pimp-button">Pimp My Shoes!</button>
+    <button class="Reset-button">Reset</button>
+    </div>
+</body>
+</html>
