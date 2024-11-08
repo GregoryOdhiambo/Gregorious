@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            padding-left: 350px;
+            padding-top: 50px;
+        }
+        .paris{
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            height: 450px;
+            width: 650px;
+            font-size: 18px;
+            color: gray;
+        }
+        
+        
+        .image{
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: lighter;
+
+        }
+        .footer{
+            padding-left: 10px;
+            padding-top: 30px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        
+        .bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-inline: 10px;
+            justify-content: space-between;
+            padding-right: 80px;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            
+            
+            
+            
+        }
+        
+        .bar input {
+            padding: 10px;
+            border: whitesmoke;
+            background-color: whitesmoke;
+            width: 435px;
+            height: 40px;
+            border-radius: 3px;
+            
+
+                        
+        }
+        
+        .bar button {
+            color: white;
+            background-color: blueviolet;
+            height: 58px;
+            width: 95px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            
+        }
+        .paris p{
+            margin: 5px 0;
+        }
+        .paris h2{
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: black;
+                }
+        .paris input{
+            font-size: 18px;
+        }
+             .button{
+                font-size: 18px;
+             }
+
+    </style>
+</head>
+<body>
+   
+    <div class="paris">
+        <div class="bar">
+            <input type="text" placeholder="Enter a city.."/>
+            <button class="button">Search</button>
+        
+        </div>
+        <hr color="whitesmoke">
+        <h2><strong>Paris</strong></h2>
+        <p>
+            Tuesday 07:45,moderate rain &ensp; &emsp; &nbsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAclBMVEX4qAX////1xSX4pgD1xB70wQD1xyb1wyP1wxX2vR73rg70vwD4pAD1wCH3shP3sBH++u32txj53pP2zE799d/2zEX98tX///v//PP535j2yDf52X/42oX87cX30WD64qH41nL757H402n76rz87sz2zlesnYTWAAAJ10lEQVR4nO2da5eiOBCGBROMoi0CCtKo4OX//8UN0vYAqVxsS8Ccfc9+2DmT0TwWKSqVpDJxMJURl4ttY13DeMuqliRD/foJ5oedqHsXo2WiapeUlNUt6Qnz+zFh0towlfzvQN4uyP1HO5KliB3AhAl/WfhPfttJjJPsIvqvHQkRO4AIE28bMC7LStA4QZmxRjOiH1/mQoRpGqbqppsD/Yxzt9MM0TR4MLuo3UuXsOOh2+hwZN1W0Q6tC2gwScjcrlh2ag2c5JQBjUKl53tGaDDXLRH66RJSNLxVWhCozfaK1QcsmORExX5Wv7v3O3BiTzRLJbrHMg0WzNUDfvT7D+/v6xZ7X9bCwzINEkyaw4a5//IFN05QKBrkSG9OJJidzDD3zkbXw03Owk2D5NBwYNJvRV/5wLn/p6D9xjENDsxOyVJ5NfXfUxzTGMIEiriR66iB0YkelR+fqr/9WZjwnO8vsexhuPr6/qrlyxxaEh9O+dkw5DGEOVNGsuhYcCLgb7fKEWEitgU+Nr6cvo9RxqdHZ1wYVj34jLlZFp3DS9x6zR1eNgw3TSuMS+JLWEQZ52DVcGO4MMfHb08qcSvd8sOvjV43TNM0wSE8ZvX3PNwGUw+pP8M8mBj1fT/LL0HilC+O/lq0dBLOseUfS7uRNTLMDfSthBPRIwZKpTOpOMDvufUAcxfCM/bzQdLvQIaB4vv+RCBf9z9MpSQbFiYzm/EYwqiCYrU88H+fhPEwYdI/92PmruY/WvE//FGeWVRtCPP813ur+eZrvZi0tFh/bTjU8z8NKsxTTxkH2XxNFFpsVp73DBHBhAmMXyaeO5svpsulimUyWS6ni/kTDx0zmwNgwlQ/9nw9WU7VJLWmy8l6Xv+bUcK4q40hyS/P12pmMoJQYWJtLOlxr7XWPV0Qz9rEIVCz7LoZjG6OXxllMX3CKA2cKXcHWhizHIEZzFUNw73XQt9tuSrvpoYxSxOawRzUY+Y1lBpH+QVMWE54Aeaissx8MfnTA9bUdLKYqyxzQYQppZbx3M3rKDXORv7iYWUfMN4cA+ShuWzkoMKcZDCbp52xSkvZyGFmK+xmMHsYZrVAZeE0C9hLs/3bYeY4o6Wp6QT0A6gwwHolZ3kmdDGmWUI0zCw/q4dJgt3lKE4BZps3oNxxAK9GjpdrrJ9tamCCXbkvtkw0zEw5YXlNX4Bp6LYIy50m3lTB3BO+rpBfrLR6IwunAdxAleiOOJDKQDKY4LAvbhllcGZutX4ny2SyBp0a56HZrdgfZAaCYJLdqYjuGXjoI3tgkdH8GCiLij24zUiACS5FnYOXfFqlrzeN/X+afikm1ffeZeeLYKAWTHrNMzEHL7IgvyohLQEv0DER9d38kEpgThH1qUEaBjeEkdKoJwU1EO9wtAdhQrMFsHkvLJxGNSf4Jz8EYVLdAvddq55YOI12Nu1W4ycAYZLQYAlstXj74H9oKok6W6LNDV5NB7AzMM26NxZOszYwTDPV0YTRbBrh8jb9oVTa6JJQ7Y0qLdd80MDgzitNpHMCtJXpaMEEZ3UWZvb2N39Xa3VCmp0DKYw6C8PfMH2z6B60TtamDRN31/tbmr+cHnteygwUO8YKGEey07LW+0MyUVNVWNPd3dmBuUZy0/Q++mvJTcOiTta2A5PkUpjZEIZRxs8sT5QwzkW6SD6QYSZTmWlI1k3admFSmXee9RfHdGBk7pmduyudwuSsdGHTzAdikZqGuGW37wJM2j2f8KOhDFMFnKBpSCQsQYs5gD2cwugt8hcFzwWImOUUYQLoX3q9BzJNrcEwQMzRANmZb8gFDGgYbhqgQ+xb7DkAEwDT537m/VIYIB/gA8kzKG92E0zjDRCVNbUQDQNtDoRgdl3TeKvBXFmtqbAa7UOL6WB6Vtjb+66MvzFM9zkDN3XDMMK0ZuCnTHzO4OVnECbtxM5DhWUNtaMAJr4wpTBJ+xhS32kMSO0Zp+RwAAjTORg67BuzVvu9SVzgLQPDdA+GzoYmqdSOz4ihaw6EyeYIhow44WRbg3DmKhxyHcOQAdI0zBW2OokzTTEy6zMlKxOQ2GCamWZSAucUBptjtgTMN5lbKrIz6Z4AEfMohswEWhIgZC9bOXOCHFw4GwcMmHIiLA9gmPgMLwKOYvxzDwD1jb8+dxDMNYKzmeNwZtKsM21kAn9hIDf2AZZpObUHzEl+3GqYTGZX8qQzcU9tmFCx+D92mMoNJP9ggm/F+v9sDO9MRWKzEi2CBwx3Y/J2fa4vq6Ree6bnuIbZqQoPfAiMS2/XCuawVa/9fQaMS7ODM7noTo2uBk8A1NJtcWCkNIEZi2XUmwIqGKseM7scgF2u2a6X5ueHM6G9gSafAkgrYXzeFMCuyZld02a7Ehp2pZrsSgI6cF5jDL4Z2EmrS886n5Q4z7SJ849Z0qAmSxqOVYtNjl3LgJ+wQAuePLN/6dyqTQ02bTexaiPQCLdoCeG/qWu2avOcTdsardpwOsatwBCMyVZgySbtASc1L2zStmn7vPxgw1CJTYlhTA42jO/IifQ0kPbIiVWHgWw6ppXsLTpAZ9XRxhEeOlV2SHXo1KrjwLqD2v37AGmRsIdppAe1rTpCP7riBroKJ4riBiZlJ7xey04YFHSVlZ0IbCoIMrJSLUJGBpakVItxEZ1eHjTjIjonEMaq8kY/I2ckhadUHEaFpx5ubfwlwUKzkmAPA9lSrO0ha8roPQwkK3Dovo8GGi+vFzisZU/pyR9ZUxS0klXlWnsrpLuGt8iiwlhV4tiq4tP9lAWX3w+ACqPK2njz9WcVbFeX0vc+q5S+ySUHL1in30sOTK6f+OPD1v/1E2+7GGQ5wMUgb7uyZbMyulJnmMt0ZvZcpuN+xDVH77iA6plPRL2A6g9Xg3ELSa4GM7rYqCNUGJsubbPqOj2rLjq06gpKu2CsurbVqgt1rbrq2KpLqK26Htyqi9vDc845ZEHF9WXT+LJ5cRIfTvnZLDtrChOoY/Djiz6AqgdFajYDMIXRSJcj0C3KG87xdcKB0WxUYZpXK/02i710woFxdqqwmkbXg6qAAvFwDIMFk+byztKCe8CgUDTIzaYrWiHBOFeZaYj/sxyx92UtPLMUn15YMInkegTm/b6YYg8eON2dln8XFoxzhWYJhBSNJygtIK9GtliGwYNJgHVPlp1aP3pyAg4bsxDLMHgwzq57IoKwo5C8P3QPtLokQnJlDiaME7a7SdwciOPizoFWlxiGKiZChIlbo4ZlJRiEBGXrUSNbs5y4kRBhWqahN3CrjlNtM2oW68A0DCpM+i8h5X8rYsMg/42ySYb0vrwLE+b3Kh5GS6WHSsrHXJ+arYkbChXGqU3D9OMgrudzJEP9+v8AtcUHN9v0XhgAAAAASUVORK5CYII=" width="30" height="30" alt="sun icon"/>
+                <span style="font-size: 60px; color:black "><strong>24</strong><sup><small>°C</small></sup></span>
+        </p>   
+        <p>Humidity:<span style="color:red">87%</span>,Wind:<span style="color:red">7.2km/h</span></p>
+        <br>
+        <br>
+        <br>
+        <hr color="whitesmoke">
+          <p class="footer">This project was coded by  <span style="color:blueviolet"><u>Gregory Oyuga</u></span> and is <span style="color:blueviolet"><u>on GitHub</u></span> and <span style="color:blueviolet"><u>hosted on Netlify</u></span></p>
+        
+    </div>
+   
+</body>
+</html>
