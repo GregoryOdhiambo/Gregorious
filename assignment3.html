@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(MASENO.PNG);
+        }
+        
+        header {
+            background: white;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+            height: 400px;
+            
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: blue;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+        
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .section {
+            background-image: url(IMG-20220530-WA0002.jpg);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        h2 {
+            color: indigo;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        footer{
+            color: red;
+        }
+        .login-section {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url(IMG-20220530-WA0002.jpg);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }
+          
+         
+          
+          .login-form {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          label {
+            margin-bottom: 5px;
+            font-weight: bold;
+          }
+          
+          input[type="text"],
+          input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+          }
+        .forgot-password {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          
+          .forgot-password:hover {
+            text-decoration: underline;
+          }
+          
+          button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+          }
+          
+          button:hover {
+            background-color: #0056b3;
+          }
+          .section1{
+            height: 700px;
+            background-image: url(IMG-20220530-WA0002.jpg);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maseno University Employee Management System</h1>
+        <img src="MASENO.PNG" alt="maseno logo" width="110" height="110" />
+        <p><i>Private Bag-40105, Maseno,Kenya</i></p>
+            <p><i>Tel: +254(0)775020</i></p>
+            <p><i>Email: draa@maseno.ac.ke</i></p>
+
+        <nav>
+            <ul>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#finance">Finance</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#procurement">Procurement</a></li>
+                <li><a href="#leave">Leave</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registration" class="section">
+            <p>Don't have an account?</p>
+            <h2>Registration</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    
+                    <label for="employee-id">Employee ID:</label>
+                    <input type="text" id="employee-id" name="employee-id" required>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                      <option value="">Select Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Job Details</legend>
+                    <label for="job-title">Job Title:</label>
+                    <input type="text" id="job-title" name="job-title" required>
+                    
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                      <option value="">Select Department</option>
+                      <option value="tr">Transport</option>
+                      <option value="it">IT</option>
+                      <option value="sales">Sales</option>
+                      <option value="cleaning">Cleaning</option>
+                    
+                    </select>
+                  </fieldset>
+                    <fieldset>
+                        <legend>Emergency Contact Information</legend>
+                        <label for="emergency-contact-name">Contact Name:</label>
+                        <input type="text" id="emergency-contact-name" name="emergency-contact-name" required>
+                        
+                        <label for="relationship">Relationship:</label>
+                        <input type="text" id="relationship" name="relationship" required>
+                        
+                        <label for="emergency-phone">Phone Number:</label>
+                        <input type="tel" id="emergency-phone" name="emergency-phone" required>
+                      </fieldset><br>
+                      <input type="checkbox" id="terms" name="terms" required>
+                      I accept the terms and conditions<br>
+                      <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section class="login-section">
+            <h2>Login</h2>
+            <form class="login-form">
+              <label for="username">Username or Email:</label>
+              <input type="text" id="username" name="username" required>
+          
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+          
+              <div class="form-options">
+                <label>
+                  <input type="checkbox" name="remember-me"> Remember Me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+              </div>
+          
+              <button type="submit">Login</button>
+            </form>
+          </section>
+        <section id="finance" class="section1">
+            <h2>Finance</h2>
+            <label for="id"><b>Employee ID</b>:</label>
+<input type="text" id="id" name="id" placeholder="41995240" required>
+<label for="salary"><b>Basic salary</b>:</label>
+<input type="text" id="salary" name="salary" placeholder="$7,000" required>
+<label for="allowance"><b>Allowances</b>:</label>
+<input type="text" id="allowance" name="allowance" placeholder="$1,000" required>
+<label for="deductions"><b>Deductions</b>:</label>
+<input type="text" id="deductions" name="deductions" placeholder="$700" required>
+<label for="net salary"><b>Net salary</b>:</label>
+<input type="text" id="net salary" name="net salary" placeholder="$5,000" required>
+
+<br>
+<button class="payslip-btn">Generate Payslip</button>
+
+        </section>
+      
+
+        <section id="departments" class="section">
+            <h2>Departments</h2>
+         
+            <label for="department-id">Department ID:</label>
+            <input type="text" id="department-id" name="department-id" required>
+            <label for="deartment-name">Department name:</label>
+            <input type="text" id="deartment-name" name="deartment-name" required>
+            <label for="department-head">Department Head:</label>
+            <input type="text" id="department-head" name="department-head" required>
+            <label for="employee-no">Number of Employees:</label>
+            <input type="text" id="employee-no" name="employee-no" required>
+            <br>
+            <button type="submit">Submit </button>
+
+        </section>
+            
+        </section>
+
+        <section id="procurement" class="section">
+            <h2>Procurement</h2>
+            
+        </section>
+
+        <section id="leave" class="section">
+            <h2>Leave</h2>
+            <label for="employee-id">Employee ID:</label>
+    <input type="text" id="employee-id" name="employee-id" required>
+    
+    <label for="leave-type">Leave Type:</label>
+    <select id="leave-type" name="leave-type" required>
+      <option value="vacation">Vacation Leave</option>
+      <option value="sick">Sick Leave</option>
+      <option value="maternity">Maternity/Paternity Leave</option>
+      <option value="unpaid">Unpaid Leave</option>
+    </select>
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="start-date" name="start-date" required>
+    
+    <label for="end-date">End Date:</label>
+    <input type="date" id="end-date" name="end-date" required>
+    
+    <label for="reason">Reason for Leave:</label>
+    <textarea id="reason" name="reason" rows="3" required></textarea>
+    <br>
+    <button type="submit">Submit Request</button>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>&copy; 2024 Employee Management System</strong></p>
+    </footer>
+</body>
+</html>
