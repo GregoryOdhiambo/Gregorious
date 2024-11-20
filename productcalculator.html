@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Discount Calculator</title>
+  <style>
+
+    body{
+        padding-left: 40px;
+    }
+   form{
+    border: solid 4px blue;
+    width: 500px;
+   }
+   h1{
+    padding-left: 100px;
+   }
+     .button{
+        padding-left: 100px;
+        padding-top: 3px;  
+     }
+      .product1{
+        padding-bottom: 3px;
+        padding-top: 3px;  
+      }
+      .product3{
+        padding-bottom: 3px;
+        padding-top: 3px;  
+      }
+       
+.product3 input{
+    background-color: whitesmoke;
+    border: whitesmoke 1px solid;
+}
+.product4 input{
+    border:whitesmoke 1px solid;
+    background-color: whitesmoke;
+}
+     .content{
+        padding-top: 3px;
+        padding-left: 2px;
+     }
+  </style>
+
+</head>
+<body>
+  <h1>Product Discount Calculator</h1>
+  
+  <form>2
+    <div class="content">
+    <div class="product">
+    <label for="productDescription">Product Description:</label>
+    <span style="padding-left:1px"><input type="text" id="productDescription" name="productDescription"></span>
+    <br>
+</div>
+<div class="product1">
+    <label for="listPrice">List Price:</label>
+       <span style="padding-left:69px"><input type="text" id="listPrice" name="listPrice"></span> 
+<br>
+</div>
+<div class="product2">
+    <label for="discountPercentage">Discount Percentage:</label>
+    
+    <input type="text" id="discountPercentage" name="discountPercentage"> %
+<br>
+
+</div>
+<div class="product3">
+    <label for="discountedAmount">Discounted Amount:</label>
+    <span style="padding-left:3px"><input type="text" id="discountedAmount" name="discountedAmount"></span>
+<br>
+</div>
+<div class="product4">
+    <label for="discountedAmount">Discounted Price:</label>
+    <span style="padding-left:22px"><input type="text" id="discountedAmount" name="discountedAmount"></span>
+<br>
+</div>
+<div class="button">
+    <input type="button" value="Calculate" onclick="calculateDiscount()">
+    <input type="reset" value="Reset">
+</div>
+<br>
+  </div>
+  </form>
+</body>
+</html>
