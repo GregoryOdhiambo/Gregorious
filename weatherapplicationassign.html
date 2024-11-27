@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather Application Assignment</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            padding-left: 100px;
+            padding-top: 50px;
+            border: solid grey 1px;
+            height: 570px;
+            width: 790px;
+            margin-left: 250px; 
+        }
+        h1 {
+            font-size: 1.5rem;
+            color: #5c4033;
+            margin-bottom: 20px;
+            text-align: center;
+          }
+        .paris{
+            background-color: #cfc9d6;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            height: 470px;
+            width: 650px;
+            font-size: 15px;
+            border-radius: 20px;          
+        }
+        .image{
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: lighter;
+        }
+        .bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-inline: 10px;
+            justify-content: space-between;
+            padding-right: 80px;
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        
+        .bar input {
+            padding: 10px;
+            border: whitesmoke;
+            background-color: whitesmoke;
+            width: 435px;
+            
+            border-radius: 5px;                 
+        }
+        
+        .bar button {
+            color: white;
+            background-color: #800080;
+            height: 40px;
+            width: 95px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+      
+        }
+        
+        .paris p{
+            margin: 5px 0;
+        }
+        .paris h2{
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: black;
+                }
+        .paris input{
+            font-size: 18px;
+        }
+             .button{
+                font-size: 18px;
+             }
+             .forecast {
+                display: flex;
+                justify-content: space-around;
+                color: #800080;
+                padding: 10px;
+              
+              }
+             .days {
+                text-align: center;
+              }
+              .footer{
+                font-size: 12px;
+              }
+              .footer2{
+                padding-left: 10px;
+                padding-top: 30px;
+                margin-top: 10px;
+                padding-left: 150px;
+            }
+           
+    </style>
+</head>
+<body>
+   
+    <div class="paris">
+        <h1 class="h2"><u>Welcome to our Weather application</u></h1>
+        <div class="bar">
+            <input type="text" placeholder="Enter city name"/>
+            <button class="button">Search</button>
+        
+        </div>
+        
+        
+        <div class="deg">
+          <h2><strong>Paris</strong></h2>
+    <span style="padding-left:550px"> <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" width="30" height="40">  <span style="font-size:40px"><strong>12</strong></span><sup><strong>°C</strong></sup></span></span> 
+       </div>
+        <p>
+            Tuesday 14:40,scattered clouds <br>      
+            Humidity:<span style="color:#800080">66,</span>Wind Speed:4.3
+        </p>  
+        <div class="forecast">
+            <div class="days">
+              <p>Mon</p>
+              <img src="cloud_6628331.png" width="20" height="20" alt="Weather Icon">
+              <p>15° <span style="color:#5c4033"> 19°</span></p>
+            </div>
+            <div class="days">
+              <p>Tue</p>
+              <img src="cloud_6628331.png" width="20" height="20" alt="Weather Icon">
+              <p>15°  <span style="color:#5c4033"> 19°</span></p>
+            </div>
+            <div class="days">
+              <p>Wed</p>
+              <img src="cloud_6628331.png" width="20" height="20" alt="Weather Icon">
+              <p>15°  <span style="color:#5c4033"> 19°</span></p>
+            </div>
+            <div class="days">
+              <p>Thu</p>
+              <img src="cloud_6628331.png" width="20" height="20" alt="Weather Icon">
+              <p>15°  <span style="color:#5c4033"> 19°</span></p>
+            </div>
+            <div class="days">
+              <p>Fri</p>
+              <img src="cloud_6628331.png" width="20" height="20" alt="Weather Icon">
+              <p>15°  <span style="color:#5c4033"> 19°</span></p>
+            </div>
+            <div class="days">
+              <p>Sat</p>
+              <img src="cloud_6628331.png" width="20" height="20" alt="Weather Icon">
+              <p>15°  <span style="color:#5c4033"> 19°</span></p>
+            </div>
+            <div class="days">
+              <p>Sun</p>
+              <img src="cloud_6628331.png" width="20" height="20" alt="Weather Icon">
+              <p>15°  <span style="color:#5c4033"> 19°</span></p>
+            </div>
+          </div>
+        <div class="footer">
+         <p class="footer2">This project was coded by  <span style="color:#800080"><u>Gregory Oyuga</u></span> and is on<span style="color:#800080"><u>GitHub</u></span> and hosted by<span style="color:#800080"><u>Netlify</u></span></p>
+        <span style="text-align:center"><p>The design was done using <span style="color:#800080">Figma</span></p></span>
+       </div>
+        </div>
+    
+   
+</body>
+</html>
